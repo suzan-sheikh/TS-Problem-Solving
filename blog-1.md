@@ -76,6 +76,10 @@ function printValue(value: string | number) {
 
 > ## Actual type return in my function for type narrowing like string and number
 
+## Conclusion
+
+Type narrowing in TypeScript is a valuable technique that empowers us to write more expressive and robust code. By utilizing type guards, type predicates, typeof, and instanceof, we can confidently narrow down the types of variables within our code blocks, leading to improved type safety and enhanced code quality.
+
 
 ### ** Best Regard,  Platoon Commander - Md Suzan Sheikh
 
