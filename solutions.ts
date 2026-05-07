@@ -26,6 +26,27 @@ interface Book {
   publishedYear: number;
 }
 
-const toggleReadStatus = (inputBook: Book): Book & {isRead: boolean} => {
-  return {...inputBook, isRead: true}
-} 
+const toggleReadStatus = (inputBook: Book): Book & { isRead: boolean } => {
+  return { ...inputBook, isRead: true };
+};
+
+// Problem_6:
+
+class Person {
+  name: string;
+  age: number;
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+class Student extends Person {
+  grade: string;
+  constructor(name: string, age: number, grade: string) {
+    super(name, age);
+    this.grade = grade;
+  }
+  getDetails(): string {
+    return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.age}`;
+  }
+}
