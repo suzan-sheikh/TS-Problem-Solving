@@ -17,3 +17,15 @@ const checkType = (iStrNum: StringOrNumber): string =>
 // Problem_4:
 
 const getProperty = <T>(inputObj: T, inputKey: keyof T) => inputObj[inputKey];
+
+// Problem_5:
+
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+}
+
+const toggleReadStatus = (inputBook: Book): Book & {isRead: boolean} => {
+  return {...inputBook, isRead: true}
+} 
