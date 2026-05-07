@@ -7,3 +7,9 @@ const filterEvenNumbers = (input: number[]): number[] =>
 
 const reverseString = (inStr: string): string =>
   inStr.split("").reverse().join("");
+
+// Problem_3:
+
+type StringOrNumber = string | number;
+const checkType = (iStrNum: StringOrNumber): string =>
+  typeof iStrNum === "string" ? "String" : "Number";
